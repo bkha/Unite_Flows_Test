@@ -36,7 +36,7 @@ http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/cu
     <flow name="united_airlinesFlow">
         <s3:no-operation-selected config-ref="" doc:name="Amazon S3"/>
     </flow>
-    <flow name="united_airlinesFlow3">
+    <flow name="united_airlinesFlow35">
         <salesforce:query doc:name="Query" doc:id="e8988b07-4f34-46e0-a0ab-89eee74f9bbd" config-ref="Salesforce_Config">
 		<salesforce:salesforce-query>#['SELECT ID, Name from Document where ID =' ++ vars.docid]</salesforce:salesforce-query>
 		</salesforce:query>
