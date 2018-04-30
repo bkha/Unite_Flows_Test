@@ -54,7 +54,7 @@ http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/cu
             </db:select>
         </poll>
     </flow>
-    <flow name="GET_American_Flights_Flow" initialState="stopped">
+    <flow name="GET_American_Flights_Flow23" initialState="stopped">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/american" allowedMethods="GET" doc:name="HTTP"/>
         <set-session-variable variableName="destination" value="#[message.inboundProperties.'http.query.params'.code]" doc:name="Session Variable"/>
         <db:select config-ref="Training_MySQL_Configuration" doc:name="Database">
