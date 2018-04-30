@@ -47,7 +47,7 @@ http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/cu
         <mulexml:dom-to-xml-transformer doc:name="DOM to XML"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
     </flow>
-    <flow name="united_airlinesFlow2">
+    <flow name="united_airlinesFlow23">
         <poll doc:name="Poll">
             <db:select config-ref="Training_MySQL_Configuration" doc:name="Database">
                 <db:parameterized-query><![CDATA[SELECT]]></db:parameterized-query>
